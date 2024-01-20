@@ -1,5 +1,7 @@
 package com.spring;
 
+import java.util.Arrays;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -11,7 +13,7 @@ public class Test {
 		Employee emp = context.getBean(Employee.class);
 		
 		emp.show();
-		System.out.println(emp.toString());
+		
 
 	}
 
