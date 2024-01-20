@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="address" class="com.spring.Address" >
+        <property name="city"> <value>Nellore</value> </property>
+        <property name="state"><value>Andhra Pradesh</value></property>
+        <property name="country"><value>India</value></property>
+        </bean>
+        <bean id="employee" class="com.spring.Employee" >
+        <property name="empId" value="10"></property>
+        <property name="empName" value="Venkatesh"></property>
+        <property name="address" ref="address" ></property>
+        </bean>
+
+    <!-- bean definitions here -->
+</beans>
